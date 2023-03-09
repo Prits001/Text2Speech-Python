@@ -7,6 +7,9 @@ Basic Text to Speech application written in Python using Custom Tkinter.
 - Change volume of the voice
 - Change rate of the voice
 
+## Screenshots
+![alt text](https://user-images.githubusercontent.com/36541603/224133138-6fde5fb3-90de-4951-951d-e7c795131f58.png)
+
 #### How to run source
 ```bash
 git clone https://github.com/Prits001/Text2Speech-Python.git
