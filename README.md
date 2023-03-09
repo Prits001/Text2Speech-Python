@@ -2,6 +2,7 @@
 Basic Text to Speech application written in Python using Custom Tkinter.
 
 ## Features
+- Dark or Light theme depending on System's current theme
 - Save the voice as a .mp3 file
 - Reads installed voices in your system and uses them
 - Change volume of the voice
