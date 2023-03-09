@@ -59,26 +59,11 @@ def on_switch_toggle(choice):
             curid = id
             break
 
-def changeRate(rt):
-    global curvol, currate, curid
-    for i in threading.enumerate(): 
-        if i.name.startswith('Saying') or i.name.startswith("Converting"): i.join()
-    rate = 50 + rt * 500
-    currate = rate
-    rateLab.configure(text=f"Rate {int(rate)}")
-
 def changeRateBT(rt):
     global curvol, currate, curid
     rate = 50 + rt * 500
     currate = rate
     rateLab.configure(text=f"Rate {int(rate)}")
-
-def changeVolume(vol):
-    global curvol, currate, curid
-    for i in threading.enumerate(): 
-        if i.name.startswith('Saying') or i.name.startswith("Converting"): i.join()
-    curvol = vol
-    volLab.configure(text=f"Volume {int(vol*100)}%")
 
 def changeVolumeBT(vol):
     global curvol, currate, curid
