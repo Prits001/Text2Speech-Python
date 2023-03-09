@@ -13,7 +13,6 @@ ids = []
 voices = engine.getProperty('voices')
 for voice in voices:
     ids.append([voice.name, voice.id, voice.gender, voice.age, voice.languages])
-print(ids)
 del engine, voices
 
 
@@ -51,7 +50,6 @@ def on_buttonConv_click():
     th = threading.Thread(target=conv_stuff, name="Converting")
     th.daemon = True
     th.start()
-    print(threading.enumerate())
 
 def on_switch_toggle(choice):
     global curvol, currate, curid
